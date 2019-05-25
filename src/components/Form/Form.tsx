@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from "../Input/Input";
+import TrackerChart from "../Chart/TrackerChart";
 
 export default class Form extends React.PureComponent {
     render() {
@@ -13,6 +14,12 @@ export default class Form extends React.PureComponent {
                 </div>
                 <div>
                     How You Feel: <Input/>
+                </div>
+                <div>
+                    <TrackerChart
+                        chartType={"ScatterChart"}
+                        habitName={"Feeling"}
+                    />
                 </div>
             </div>
         );

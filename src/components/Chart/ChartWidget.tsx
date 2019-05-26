@@ -2,16 +2,12 @@ import React from 'react';
 import Chart from "react-google-charts";
 import {GoogleChartWrapperChartType} from "react-google-charts/dist/types";
 
-interface ChartProps {
+interface ChartWidgetProps {
     chartType: GoogleChartWrapperChartType,
     habitName: string
 }
 
-export default class TrackerChart extends React.Component<ChartProps> {
-    constructor(props: ChartProps) {
-        super(props);
-    }
-
+export default class ChartWidget extends React.PureComponent<ChartWidgetProps> {
     render() {
         return (
             <Chart

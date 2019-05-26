@@ -2,6 +2,7 @@ import React from 'react';
 import Input from "../Input/Input";
 import TrackerChart from "../Chart/TrackerChart";
 import TrackerDateInput from "../DateInput/TrackerDateInput";
+import {AddButton} from "../styled-components/Add/Add";
 
 export default class Form extends React.PureComponent {
     render() {
@@ -14,7 +15,7 @@ export default class Form extends React.PureComponent {
                     Waist Size (Inches): <Input/>
                 </div>
                 <div>
-                    How You Feel: <Input/> <TrackerDateInput />
+                    How You Feel: <Input/> <TrackerDateInput /> <AddButton text={"Add"} />
                 </div>
                 <div>
                     <TrackerChart
